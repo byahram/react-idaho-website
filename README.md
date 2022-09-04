@@ -4,11 +4,7 @@
 
 <br/><br/>
 
----
-
 ## To set the react environment using [create-react-app](https://create-react-app.dev/)
-
----
 
 1. Download `node.js` <br/>
    https://nodejs.org/en/ <br/>
@@ -29,11 +25,7 @@
 
 <br/><br/>
 
----
-
 ## how to use `Prettier` code formatter
-
----
 
 1. vsCode extension에서 prettier 다운로드 하고 vscode를 껐다가 켠다.
 2. 다시 켠 vsCode에서 f1을 눌러 setting.js을 검색해 user형인 setting.json 연다.
@@ -54,11 +46,7 @@
 
 <br/><br/>
 
----
-
 ## Learn More
-
----
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
