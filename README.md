@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# first-react-website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[view my react website]()
 
-## Available Scripts
+<br/><br/>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## To set the react environment using [create-react-app](https://create-react-app.dev/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Download `node.js` <br/>
+   https://nodejs.org/en/ <br/>
+   ![이미지](/src/assets/img/readme_0.png) <br/><br/>
+2. Download `git` <br/>
+   https://git-scm.com/downloads <br/>
+   ![이미지](/src/assets/img/readme_00.png) <br/><br/>
+3. Use `npx create-react-app [react-folder-name]` to make the react project folder <br/>
+   ![이미지](/src/assets/img/readme_1.png) <br/>
+   ![이미지](/src/assets/img/readme_4.png) <br/><br/>
+4. `npm start` to run the app using vsCode terminal or git bash in the [react-folder-name] project folder <br/>
+   ![이미지](/src/assets/img/readme_2.png) <br/><br/>
+5. Open `http://localhost:3000` in my web browser <br/>
+   ![이미지](/src/assets/img/readme_3.png) <br/><br/>
+6. builds the app for production to the build folder using `npm run build` <br/>
+   ![이미지](/src/assets/img/readme_5.png) <br/>
+   ![이미지](/src/assets/img/readme_6.png)
 
-### `npm test`
+<br/><br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## how to use `Prettier` code formatter
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. vsCode extension에서 prettier 다운로드 하고 vscode를 껐다가 켠다.
+2. 다시 켠 vsCode에서 f1을 눌러 setting.js을 검색해 user형인 setting.json 연다.
+3. setting.json에 다음 코드를 추가해준다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```json
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+},
+"editor.defaultFormatter": "esbenp.prettier-vscode", "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.formatOnSave": true,    // react 할거면 활성화 html은 비활성화
+```
 
-### `npm run eject`
+<br/><br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
 ## Learn More
 
+---
+
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To learn React, check out the [React documentation](https://reactjs.org/). <br/><br/>
