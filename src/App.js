@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Contents from "./components/Contents";
 import Slider from "./components/Slider";
+import Image from "./components/Image";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header fonts="nexon" />
       <Contents>
         <Slider fonts="nexon" />
+        <Image skill={["section", "nexon"]} />
       </Contents>
     </>
   );
