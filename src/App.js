@@ -8,6 +8,7 @@ import ImgText from "./components/ImgText";
 import Card from "./components/Card";
 import Banner from "./components/Banner";
 import Text from "./components/Text";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Banner skill={["section", "gmarket"]} />
         <Text skill={["section", "nexon"]} />
       </Contents>
+      <Footer skill={["section", "nexon", "gray"]} />
     </>
   );
 }
