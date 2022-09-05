@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Contents from "./components/Contents";
 import Slider from "./components/Slider";
 import Image from "./components/Image";
+import ImgText from "./components/ImgText";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Contents>
         <Slider fonts="nexon" />
         <Image skill={["section", "nexon"]} />
+        <ImgText skill={["section", "nexon", "gray"]} />
       </Contents>
     </>
   );
