@@ -6,6 +6,7 @@ import Slider from "./components/Slider";
 import Image from "./components/Image";
 import ImgText from "./components/ImgText";
 import Card from "./components/Card";
+import Banner from "./components/Banner";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Image skill={["section", "nexon"]} />
         <ImgText skill={["section", "nexon", "gray"]} />
         <Card skill={["section", "nexon"]} />
+        <Banner skill={["section", "gmarket"]} />
       </Contents>
     </>
   );
