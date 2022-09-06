@@ -18,9 +18,9 @@ function Slider(props) {
                 operated by the Bogus Basin Recreation Association
               </p>
               <div className="btn">
-                <a href="/">자세히 보기</a>
+                <a href="/">VIEW MORE</a>
                 <a href="/" className="black">
-                  사이트 보기
+                  GO TO SITE
                 </a>
               </div>
             </div>

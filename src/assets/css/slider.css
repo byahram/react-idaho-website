@@ -5,7 +5,7 @@
   background: url(../img/id-bogus-basin.jpg) no-repeat center center / cover;
 }
 .slider__img .desc {
-  width: 1160px;
+  width: 78%;
   margin: 0 auto;
   padding: 100px 20px;
 }
@@ -80,4 +80,40 @@
 }
 .slider__dot a.stop {
   background-position: -60px -70px;
+}
+
+@media only screen and (max-width: 1210px) {
+  .slider__img .desc h3 {
+    font-size: 95px;
+  }
+  .slider__img .desc p {
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .slider__img .desc h3 {
+    font-size: 75px;
+  }
+  .slider__img .desc p {
+    font-size: 15px;
+    margin-bottom: 65px;
+  }
+  .slider__img .desc .btn a {
+    font-size: 13px;
+    padding: 11px 40px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .slider__arrow {
+    display: none;
+  }
+  .slider__img .desc h3 {
+    font-size: 60px;
+  }
+  .slider__img .desc .btn a {
+    font-size: 11px;
+    padding: 11px 30px;
+  }
 }
