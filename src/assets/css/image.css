@@ -1,5 +1,4 @@
 .image__inner {
-  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -45,23 +44,29 @@
   background-color: #b59140;
 }
 
+@media only screen and (max-width: 1260px) {
+  .image__inner {
+    width: 95%;
+  }
+}
+
 @media only screen and (max-width: 1210px) {
-  #imageType h2 {
+  #imageType > h2 {
+    padding: 0px 30px;
     font-size: 40px;
   }
-  #imageType p {
+  #imageType > p {
+    padding: 0px 25px;
     font-size: 20px;
   }
 }
+
 @media only screen and (max-width: 1110px) {
   #imageType h2 {
     font-size: 35px;
   }
   #imageType h3 {
     font-size: 28px;
-  }
-  #imageType p {
-    font-size: 19px;
   }
   .image__title {
     font-size: 30px;
@@ -70,33 +75,27 @@
     font-size: 13px;
   }
 }
+
 @media only screen and (max-width: 850px) {
-  #imageType p {
-    font-size: 15px;
-  }
   .image__inner {
     display: block;
     width: 70%;
   }
-  .image__inner .image p {
-    display: block;
-  }
   .image {
     width: 100%;
-    height: 450px;
   }
-  .image p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  .image.img1 {
+    margin-bottom: 40px;
   }
 }
+
 @media only screen and (max-width: 550px) {
   #imageType h3 {
     font-size: 25px;
     padding-bottom: 20px;
     margin-bottom: auto;
+  }
+  .image p {
+    display: none;
   }
 }
