@@ -1,5 +1,7 @@
 .footer__menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 70px;
 }
 .footer__menu > div {
@@ -21,4 +23,34 @@
   padding-top: 40px;
   color: #666;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 1110px) {
+  .footer__inner {
+    width: 98%;
+  }
+  .footer__menu {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .footer__menu > div {
+    width: 33%;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .footer__menu > div {
+    width: 49%;
+    padding-bottom: 20px;
+  }
+  .footer__menu h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .footer__menu li a {
+    font-size: 12px;
+  }
 }
