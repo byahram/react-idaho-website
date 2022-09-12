@@ -37,13 +37,15 @@ function ImgText(props) {
             </li>
           </ul>
         </div>
-        <div className="imgText__img img1">
-          <a href="/">Boise Fry Company</a>
-        </div>
-        <div className="imgText__img img2">
-          <a href="/" className="blue">
-            Idaho Breweries
-          </a>
+        <div className="imgText__img">
+          <div className="img1">
+            <a href="/">Boise Fry Company</a>
+          </div>
+          <div className="img2">
+            <a href="/" className="blue">
+              Idaho Breweries
+            </a>
+          </div>
         </div>
       </div>
     </section>
