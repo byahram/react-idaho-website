@@ -78,7 +78,6 @@ header .nav-btn {
     width: 50%;
   }
   .header__menu ul {
-    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
