@@ -78,6 +78,7 @@ header .nav-btn {
     width: 50%;
   }
   .header__menu ul {
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -89,7 +90,10 @@ header .nav-btn {
     gap: 1.5rem;
     background-color: #f1f1f1;
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateY(-200vh);
+  }
+  .header__menu li a {
+    font-size: 20px;
   }
   header .responsive_nav {
     transform: none;
@@ -103,11 +107,11 @@ header .nav-btn {
     border: none;
     outline: none;
   }
-  nav .nav-close-btn {
+  /* nav .nav-close-btn {
     position: absolute;
     top: 10px;
     right: 20px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 510px) {
