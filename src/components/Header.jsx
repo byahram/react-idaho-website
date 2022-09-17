@@ -1,13 +1,12 @@
 import React from "react";
-import { useRef } from "react";
+import $ from "jquery";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header(props) {
-  const navRef = useRef();
-
-  const showNav = () => {
-    navRef.current.classList.toggle("responsive_nav");
-  };
+  function showNav(e) {
+    e.preventDefault();
+    $(".header__menu").slideToggle();
+  }
 
   return (
     <header id="headerType" className={`header__wrap ${props.fonts}`}>
@@ -19,7 +18,7 @@ function Header(props) {
         </div>
 
         <nav className="header__menu">
-          <ul ref={navRef}>
+          <ul>
             <li>
               <a href="/">ABOUT</a>
             </li>
@@ -32,14 +31,14 @@ function Header(props) {
             <li>
               <a href="/">TRAVEL TIPS</a>
             </li>
-            <button className="nav-btn nav-close-btn" onClick={showNav}>
-              <FaTimes />
-            </button>
           </ul>
         </nav>
 
         <button className="nav-btn" onClick={showNav}>
           <FaBars />
+        </button>
+        <button className="nav-btn nav-close-btn" onClick={showNav}>
+          <FaTimes />
         </button>
 
         <div className="header__member">

@@ -67,7 +67,6 @@ header .nav-btn {
 
 @media only screen and (max-width: 910px) {
   #headerType {
-    position: sticky;
     top: 0;
     z-index: 1000;
   }
@@ -78,19 +77,18 @@ header .nav-btn {
     width: 50%;
   }
   .header__menu ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: #f1f1f1;
-    transition: 1s;
-    transform: translateY(-200vh);
+    justify-content: space-evenly;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 350px;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
   }
   .header__menu li a {
     font-size: 20px;
@@ -107,11 +105,12 @@ header .nav-btn {
     border: none;
     outline: none;
   }
-  /* nav .nav-close-btn {
+  header .nav-close-btn {
     position: absolute;
     top: 10px;
     right: 20px;
-  } */
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 510px) {
