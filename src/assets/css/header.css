@@ -26,6 +26,10 @@
 .header__menu li {
   display: inline;
 }
+.header__menu li:nth-child(5),
+.header__menu li:nth-child(6) {
+  display: none;
+}
 .header__menu li a {
   padding: 13px 30px;
   margin: 0 5px;
@@ -42,8 +46,11 @@
 .header__member a {
   font-size: 16px;
   border: 1px solid #000;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 50px;
+}
+.header__member a:nth-child(1) {
+  margin-right: 10px;
 }
 header .nav-btn {
   display: none;
@@ -90,12 +97,14 @@ header .nav-btn {
     border-bottom: 1px solid #ccc;
     z-index: 1;
   }
+  .header__menu li:nth-child(5),
+  .header__menu li:nth-child(6) {
+    display: inline;
+  }
   .header__menu li a {
     font-size: 20px;
   }
-  header .responsive_nav {
-    transform: none;
-  }
+
   header .nav-btn {
     display: block;
     font-size: 30px;

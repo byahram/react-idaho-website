@@ -2,10 +2,38 @@ import React from "react";
 import $ from "jquery";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+function SigninInfo(props) {
+  return <a href={props.goto}>{props.text}</a>;
+}
+const signinText = [
+  { title: "Sign in", goto: "#" },
+  { title: "Github", goto: "https://github.com/byahram/idaho-react-website" },
+];
+
+function MenuInfo(props) {
+  return (
+    <li>
+      <a href={props.goto}>{props.text}</a>
+    </li>
+  );
+}
+const menuText = [
+  { menu: "ABOUT", goto: "#" },
+  { menu: "FOOD/DRINK", goto: "#" },
+  { menu: "THINGS TO DO", goto: "#" },
+  { menu: "TRAVEL TIPS", goto: "#" },
+  { menu: "SIGN IN", goto: "#" },
+  {
+    menu: "GO TO GITHUB",
+    goto: "https://github.com/byahram/idaho-react-website",
+  },
+];
+const logoText = { txt: ["Idaho", "state"] };
+
 function Header(props) {
   function showNav(e) {
     e.preventDefault();
-    $(".header__menu").slideToggle();
+    $(".header__menu ul").slideToggle();
   }
 
   return (
@@ -13,24 +41,15 @@ function Header(props) {
       <div className="header__inner">
         <div className="header__logo">
           <a href="/">
-            Idaho <em>state</em>
+            {logoText.txt[0]} <em>{logoText.txt[1]}</em>
           </a>
         </div>
 
         <nav className="header__menu">
           <ul>
-            <li>
-              <a href="/">ABOUT</a>
-            </li>
-            <li>
-              <a href="/">FOOD/DRINK</a>
-            </li>
-            <li>
-              <a href="/">THINGS TO DO</a>
-            </li>
-            <li>
-              <a href="/">TRAVEL TIPS</a>
-            </li>
+            {menuText.map((txt) => (
+              <MenuInfo text={txt.menu} key={txt.menu} goto={txt.goto} />
+            ))}
           </ul>
         </nav>
 
@@ -42,7 +61,9 @@ function Header(props) {
         </button>
 
         <div className="header__member">
-          <a href="/">Sign in</a>
+          {signinText.map((txt) => (
+            <SigninInfo text={txt.title} key={txt.title} goto={txt.goto} />
+          ))}
         </div>
       </div>
     </header>

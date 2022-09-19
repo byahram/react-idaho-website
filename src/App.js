@@ -15,7 +15,7 @@ function App() {
     <>
       <Header fonts="nexon" />
       <Contents>
-        <Slider fonts="nexon" />
+        <Slider skill={["nexon", "슬라이드 유형"]} />
         <Image skill={["section", "nexon"]} />
         <ImgText skill={["section", "nexon", "gray"]} />
         <Card skill={["section", "nexon"]} />
