@@ -1,6 +1,6 @@
 import React from "react";
 
-function ImageInfo(props) {
+function ImageWrap(props) {
   return (
     <article className={`image ${props.class}`}>
       <h3 className="image__title">{props.title}</h3>
@@ -48,7 +48,7 @@ function Image(props) {
       </p>
       <div className="image__inner container">
         {imageText.map((txt) => (
-          <ImageInfo
+          <ImageWrap
             key={txt.title}
             class={txt.class}
             title={txt.title}
