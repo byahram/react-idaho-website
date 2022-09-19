@@ -2,7 +2,7 @@ import React from "react";
 import $ from "jquery";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-function SigninInfo(props) {
+function SigninWrap(props) {
   return <a href={props.goto}>{props.text}</a>;
 }
 const signinText = [
@@ -10,7 +10,7 @@ const signinText = [
   { title: "Github", goto: "https://github.com/byahram/idaho-react-website" },
 ];
 
-function MenuInfo(props) {
+function MenuWrap(props) {
   return (
     <li>
       <a href={props.goto}>{props.text}</a>
@@ -48,7 +48,7 @@ function Header(props) {
         <nav className="header__menu">
           <ul>
             {menuText.map((txt) => (
-              <MenuInfo text={txt.menu} key={txt.menu} goto={txt.goto} />
+              <MenuWrap text={txt.menu} key={txt.menu} goto={txt.goto} />
             ))}
           </ul>
         </nav>
@@ -62,7 +62,7 @@ function Header(props) {
 
         <div className="header__member">
           {signinText.map((txt) => (
-            <SigninInfo text={txt.title} key={txt.title} goto={txt.goto} />
+            <SigninWrap text={txt.title} key={txt.title} goto={txt.goto} />
           ))}
         </div>
       </div>
