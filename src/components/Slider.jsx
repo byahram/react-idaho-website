@@ -1,7 +1,7 @@
 // rfec
 import React from "react";
 
-function DotInfo(props) {
+function DotWrap(props) {
   return (
     <a href="/" className={props.class}>
       <span className="blind">{props.text}</span>
@@ -16,7 +16,7 @@ const dotText = [
   { class: "stop", text: "정지" },
 ];
 
-function ArrowInfo(props) {
+function ArrowWrap(props) {
   return (
     <a href="/" className={props.class}>
       <span className="blind">{props.text}</span>
@@ -28,7 +28,7 @@ const arrowText = [
   { class: "right", text: "다음 이미지" },
 ];
 
-function SliderInfo(props) {
+function SliderWrap(props) {
   return (
     <div className="desc">
       <span>{props.loc}</span>
@@ -85,7 +85,7 @@ function Slider(props) {
         <div className="slider">
           <div className="slider__img">
             {sliderText.map((txt) => (
-              <SliderInfo
+              <SliderWrap
                 key={txt.name}
                 loc={txt.loc}
                 name={txt.name}
@@ -96,12 +96,12 @@ function Slider(props) {
           </div>
           <div className="slider__arrow">
             {arrowText.map((txt) => (
-              <ArrowInfo key={txt.class} class={txt.class} text={txt.text} />
+              <ArrowWrap key={txt.class} class={txt.class} text={txt.text} />
             ))}
           </div>
           <div className="slider__dot">
             {dotText.map((txt) => (
-              <DotInfo key={txt.text} class={txt.class} text={txt.text} />
+              <DotWrap key={txt.text} class={txt.class} text={txt.text} />
             ))}
           </div>
         </div>
