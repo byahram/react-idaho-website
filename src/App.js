@@ -19,7 +19,7 @@ function App() {
         <Image skill={["section", "nexon"]} />
         <ImgText skill={["section", "nexon", "gray", "이미지 텍스트 유형"]} />
         <Card skill={["section", "nexon"]} />
-        <Banner skill={["section", "gmarket"]} />
+        <Banner skill={["section", "gmarket", "배너 영역"]} />
         <Text skill={["section", "nexon"]} />
       </Contents>
       <Footer skill={["section", "nexon", "gray"]} />
