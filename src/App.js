@@ -22,7 +22,7 @@ function App() {
         <Banner skill={["section", "gmarket", "배너 영역"]} />
         <Text skill={["section", "nexon"]} />
       </Contents>
-      <Footer skill={["section", "nexon", "gray"]} />
+      <Footer skill={["section", "nexon", "gray", "푸터 영역"]} />
     </>
   );
 }

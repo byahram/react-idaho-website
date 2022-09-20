@@ -1,109 +1,80 @@
 import React from "react";
 
+function ListWrap(props) {
+  return (
+    <li>
+      <a href="/">{props.spot}</a>
+    </li>
+  );
+}
+function MenuWrap(props) {
+  return (
+    <div>
+      <h3>{props.city}</h3>
+      <ul>
+        {props.spot.map((txt) => (
+          <ListWrap key={txt} spot={txt} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+const menuText = [
+  {
+    city: "Boise",
+    spot: [
+      "Boise Train Depot",
+      "Scavenger Hunt",
+      "Bogus Basin",
+      "Botanical Garden",
+    ],
+  },
+  {
+    city: "Idaho falls",
+    spot: ["Shoshone Falls", "Jump Creek", "Auger Falls"],
+  },
+  {
+    city: "Nampa",
+    spot: ["Winery Tours", "Wilson Springs Ponds"],
+  },
+  {
+    city: "Pocatello",
+    spot: [
+      "Old Town",
+      "St.Joseph's Chapel",
+      "Hot Spring",
+      "Natural History Museum",
+      "Swore Frams",
+    ],
+  },
+  {
+    city: "Twin Falls",
+    spot: ["Perrine Bridge", "Snake River", "Dierkes Lake"],
+  },
+  {
+    city: "Meridian",
+    spot: ["The Village", "Settlers Park", "Wahooz"],
+  },
+];
+const footerText = { text: ["2022 Ahram Kim.", "All rights reserved."] };
+
 function Footer(props) {
   return (
     <footer
       id="footerType"
       className={`footer__wrap ${props.skill[0]} ${props.skill[1]} ${props.skill[2]}`}
     >
-      <h2 className="blind">푸터 영역</h2>
+      <h2 className="blind">{`${props.skill[2]}`}</h2>
       <div className="footer__inner container">
         <div className="footer__menu">
-          <div>
-            <h3>Boise</h3>
-            <ul>
-              <li>
-                <a href="/">Boise Train Depot</a>
-              </li>
-              <li>
-                <a href="/">Scavenger Hunt</a>
-              </li>
-              <li>
-                <a href="/">Bogus Basin</a>
-              </li>
-              <li>
-                <a href="/">Botanical Garden</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Idaho falls</h3>
-            <ul>
-              <li>
-                <a href="/">Shoshone Falls</a>
-              </li>
-              <li>
-                <a href="/">Jump Creek</a>
-              </li>
-              <li>
-                <a href="/">Auger Falls</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Nampa</h3>
-            <ul>
-              <li>
-                <a href="/">Winery Tours</a>
-              </li>
-              <li>
-                <a href="/">Wilson Springs Ponds</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Pocatello</h3>
-            <ul>
-              <li>
-                <a href="/">Old Town</a>
-              </li>
-              <li>
-                <a href="/">St.Joseph's Chapel</a>
-              </li>
-              <li>
-                <a href="/">Hot Spring</a>
-              </li>
-              <li>
-                <a href="/">Natural History Museum</a>
-              </li>
-              <li>
-                <a href="/">Swore Frams</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Twin Falls</h3>
-            <ul>
-              <li>
-                <a href="/">Perrine Bridge</a>
-              </li>
-              <li>
-                <a href="/">Snake River</a>
-              </li>
-              <li>
-                <a href="/">Dierkes Lake</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Meridian</h3>
-            <ul>
-              <li>
-                <a href="/">The Village</a>
-              </li>
-              <li>
-                <a href="/">Settlers Park</a>
-              </li>
-              <li>
-                <a href="/">Wahooz</a>
-              </li>
-            </ul>
-          </div>
+          {menuText.map((txt) => (
+            <MenuWrap key={txt.city} city={txt.city} spot={txt.spot} />
+          ))}
         </div>
         <div className="footer__right">
-          2022 Ahram Kim.
+          {footerText.text[0]}
           <br />
-          All rights reserved.
+          {footerText.text[1]}
         </div>
       </div>
     </footer>
