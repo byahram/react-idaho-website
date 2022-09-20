@@ -56,10 +56,10 @@ const cardText = [
     img: statePark,
   },
   {
-    title: "HOT SPRING",
-    desc: "you’ll find Idaho’s beloved hot springs waiting to wash away your stress. For an alternative soaking experience, visit any of the more developed hot springs spots for a soak with modern amenities.",
+    title: "BSU",
+    desc: "Boise State is Idaho's metropolitan research university, located in the state's capital city, a hub of government, business, the arts, health care, industry and technology.",
     btn: "view more",
-    goto: "https://visitidaho.org/things-to-do/hot-springs/",
+    goto: "https://www.boisestate.edu/",
     img: hotSpring,
   },
 ];
