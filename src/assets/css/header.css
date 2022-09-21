@@ -93,7 +93,7 @@ header .nav-btn {
     position: absolute;
     top: 60px;
     left: 50%;
-    /* transform: translate(-50%, 0); */
+    transform: translate(-50%, 0);
     height: 350px;
     width: 100%;
     background-color: rgb(247, 247, 247);

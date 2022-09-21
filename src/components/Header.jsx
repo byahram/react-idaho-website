@@ -46,7 +46,7 @@ function Header(props) {
         </div>
 
         <nav className="header__menu">
-          <ul class="active">
+          <ul>
             {menuText.map((txt) => (
               <MenuWrap text={txt.menu} key={txt.menu} goto={txt.goto} />
             ))}
