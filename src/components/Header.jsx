@@ -33,7 +33,7 @@ const logoText = { txt: ["Idaho", "state"] };
 function Header(props) {
   function showNav(e) {
     e.preventDefault();
-    $(".header__menu ul").slideToggle();
+    $(".header__menu").slideToggle();
   }
 
   return (
@@ -46,7 +46,7 @@ function Header(props) {
         </div>
 
         <nav className="header__menu">
-          <ul>
+          <ul class="active">
             {menuText.map((txt) => (
               <MenuWrap text={txt.menu} key={txt.menu} goto={txt.goto} />
             ))}

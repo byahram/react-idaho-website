@@ -1,15 +1,15 @@
 .slider {
   position: relative;
 }
-.slider__img.img1 {
+.slider__img {
   background: url(../img/id-bogus-basin.jpg) no-repeat center center / cover;
 }
-.slider__img.img2 {
+/* .slider__img.img2 {
   background: url(../img/yellow1.jpg) no-repeat center center / cover;
 }
 .slider__img.img3 {
   background: url(../img/downtown.jpg) no-repeat center center / cover;
-}
+} */
 .slider__img .desc {
   width: 78%;
   margin: 0 auto;
