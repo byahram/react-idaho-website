@@ -1,6 +1,6 @@
 # first-react-website
 
-[view my react website](https://idaho-react-website.netlify.app)
+[view my work](https://idaho-react-website.netlify.app)
 
 <br/><br/>
 
